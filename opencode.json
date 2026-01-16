@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "dohyun_litellm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "litellm by dohyun (local)",
+      "options": {
+        "baseURL": "http://localhost:4000/v1"
+      },
+      "models": {
+        "gemini-2.5-flash-lite": {
+          "name": "Gemini 2.5 Flash Lite",
+        },
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash"
+        },
+        "glm-4.7-free": {
+          "name": "GLM 4.7"
+        },
+        "grok-code": {
+          "name": "Grok Code Fast 1"
+        }
+      }
+    }
+  },
+  "permission": {
+    "read": {
+      "*": "allow",
+      ".git/**": "deny"
+    }
+  }
+}
+
