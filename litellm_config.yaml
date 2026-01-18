@@ -27,3 +27,15 @@ model_list:
 litellm_settings:
   # Enable Arize Phoenix callbacks for local observability
   callbacks: ["arize_phoenix"]
+  
+  # Don't drop any parameters - preserve everything Claude Code sends
+  drop_params: false
+
+  # Enable verbose logging to see what models Claude Code selects
+  set_verbose: true
+
+  # Allow pass-through of all parameters
+  pass_through_params: true
+
+  # Disable authentication by default (can be overridden with LITELLM_MASTER_KEY)
+  disable_auth: true
