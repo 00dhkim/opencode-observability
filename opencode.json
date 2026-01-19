@@ -28,6 +28,7 @@
       "*": "allow",
       ".git/**": "deny"
     }
-  }
+  },
+  "small_model": "dohyun_litellm/grok-code",
 }
 
